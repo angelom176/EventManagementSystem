@@ -1,0 +1,191 @@
+/* ===== HOME PAGE ===== */
+
+.home {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  background-color: #0b132b;
+  color: white;
+}
+
+
+/* ===== HERO ===== */
+
+.hero {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 40px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #0b132b,
+    #1c2541
+  );
+}
+
+
+/* 2026 SEASON */
+
+.season {
+  color: #ff9f1c;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+
+/* MAIN TITLE */
+
+.hero-title {
+  font-size: 64px;
+  font-weight: bold;
+
+  line-height: 1.1;
+
+  margin-bottom: 25px;
+}
+
+
+/* GRAND PRIX */
+
+.highlight {
+  color: #ff9f1c;
+}
+
+
+/* DESCRIPTION */
+
+.hero-description {
+  max-width: 650px;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: #b8c1d1;
+
+  margin-bottom: 40px;
+}
+
+
+/* ===== BUTTONS ===== */
+
+.buttons {
+  display: flex;
+  gap: 20px;
+
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+/* FIRST BUTTON */
+
+.primary-button {
+  background-color: #ff9f1c;
+  color: #0b132b;
+
+  padding: 14px 30px;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.primary-button:hover {
+  background-color: #ffbf69;
+  transform: translateY(-3px);
+}
+
+
+/* SECOND BUTTON */
+
+.secondary-button {
+  color: white;
+
+  border: 2px solid white;
+
+  padding: 12px 30px;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.secondary-button:hover {
+  background-color: white;
+  color: #0b132b;
+}
+
+
+/* ===== STATS ===== */
+
+.stats {
+  background-color: #1c2541;
+
+  padding: 35px 20px;
+}
+
+
+.stats-container {
+  max-width: 1000px;
+
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 40px;
+
+  text-align: center;
+}
+
+
+.stat-number {
+  color: #ff9f1c;
+
+  font-size: 42px;
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+
+.stat-text {
+  color: #c5cee0;
+
+  font-size: 15px;
+}
+
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 700px) {
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+}
